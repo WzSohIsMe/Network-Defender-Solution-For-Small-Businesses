@@ -14,22 +14,22 @@
     
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="home.html">Network Defender</a>
+          <a class="navbar-brand" href="#">Network Defender</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
-              <a class="nav-link" href="result.html">Scan Ports</a>
-              <a class="nav-link" href="#">Analyze Traffic</a>
-              <a class="nav-link" href="#">Report</a>
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#PortScanningSection" name="ScanPorts" type="button">Scan Ports</a>
+              <a class="nav-link" href="#AnalyzeTrafficSection">Analyze Traffic</a>
+              <a class="nav-link" href="#ReportSection">Report</a>
             </div>
           </div>
         </div>
       </nav>
 
-    <div class="container p-5">
+    <div class="container p-5 border rounded">
         <div class="row justify-content-center">
             <h1 class="text-center" style="font-size:100px">YOUR DEVICE IS</h1>
         </div>
@@ -46,20 +46,20 @@
     </div>
 
 
-    <div class="container">
+    <div class="container p-5">
         <div class="row justify-content-center">
             <hr class="dotted">
         </div>
     </div>
     
 <form action="result">
-    <div class="container p-5">
+    <div class="container p-5 border rounded">
         <div class="row justify-content-center">
             <h1 class="text-center p-5">Enhance Your Network</h1>
         </div>
         <div class="row justify-content-center p-3">     
             <div class="col justify-content-center text-center">
-                    <button href="result" type="submit" class="justify-content-center rounded " name="ScanPorts" target="_blank" onclick="remindMinutes()"><h2 class="text-center">Scan Ports</h2></button>
+                    <button href="result" type="submit" class="justify-content-center rounded " name="ScanPorts" target="_blank" onclick="remindMinutes()" id="PortScanningSection"><h2 class="text-center">Scan Ports</h2></button>
                     <script>
                         function remindMinutes(){
                             alert("It will take a few minutes to scan your machine. Please be patient.")
@@ -69,7 +69,46 @@
         </div>
         </div>
     </div>
+</form>
 
+<div class="container p-5">
+    <div class="row justify-content-center">
+        <hr class="dotted">
+    </div>
+</div>
+
+<form action="traffic">
+    <div class="container p-5 border rounded">
+        <div class="row justify-content-center">
+            <h1 class="text-center p-5">Analyze Traffic</h1>
+        </div>
+        <div class="row justify-content-center p-3">     
+            <div class="col justify-content-center text-center">
+                    <button href="traffic" type="submit" class="justify-content-center rounded " name="AnalyzeTraffoc" target="_blank" id="AnalyzeTrafficSection"><h2 class="text-center">Analyze Traffic</h2></button>
+            </div>
+        </div>
+        </div>
+    </div>
+</form>
+
+<div class="container p-5">
+    <div class="row justify-content-center">
+        <hr class="dotted">
+    </div>
+</div>
+
+<form action="report">
+    <div class="container p-5 border rounded">
+        <div class="row justify-content-center">
+            <h1 class="text-center p-5">Report</h1>
+        </div>
+        <div class="row justify-content-center p-3">     
+            <div class="col justify-content-center text-center">
+                    <button href="report" type="submit" class="justify-content-center rounded " name="CreateReport" target="_blank" id="ReportSection"><h2 class="text-center">Report</h2></button>
+            </div>
+        </div>
+        </div>
+    </div>
 </form>
     
 </body>
