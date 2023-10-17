@@ -1,0 +1,281 @@
+{
+    "nmap": {
+        "command_line": "nmap -oX - -p 0-65535 -sV 192.168.0.116",
+        "scaninfo": {
+            "error": [
+                "NSOCK ERROR [0.0510s] ssl_init_helper(): OpenSSL legacy provider failed to load.\r\n\r\n"
+            ],
+            "tcp": {
+                "method": "syn",
+                "services": "0-65535"
+            }
+        },
+        "scanstats": {
+            "timestr": "Tue Oct 17 18:36:13 2023",
+            "elapsed": "169.27",
+            "uphosts": "1",
+            "downhosts": "0",
+            "totalhosts": "1"
+        }
+    },
+    "scan": {
+        "192.168.0.116": {
+            "hostnames": [
+                {
+                    "name": "",
+                    "type": ""
+                }
+            ],
+            "addresses": {
+                "ipv4": "192.168.0.116"
+            },
+            "vendor": {},
+            "status": {
+                "state": "up",
+                "reason": "localhost-response"
+            },
+            "tcp": {
+                "135": {
+                    "state": "open",
+                    "reason": "syn-ack",
+                    "name": "msrpc",
+                    "product": "Microsoft Windows RPC",
+                    "version": "",
+                    "extrainfo": "",
+                    "conf": "10",
+                    "cpe": "cpe:/o:microsoft:windows"
+                },
+                "137": {
+                    "state": "filtered",
+                    "reason": "no-response",
+                    "name": "netbios-ns",
+                    "product": "",
+                    "version": "",
+                    "extrainfo": "",
+                    "conf": "3",
+                    "cpe": ""
+                },
+                "139": {
+                    "state": "open",
+                    "reason": "syn-ack",
+                    "name": "netbios-ssn",
+                    "product": "Microsoft Windows netbios-ssn",
+                    "version": "",
+                    "extrainfo": "",
+                    "conf": "10",
+                    "cpe": "cpe:/o:microsoft:windows"
+                },
+                "445": {
+                    "state": "open",
+                    "reason": "syn-ack",
+                    "name": "microsoft-ds",
+                    "product": "",
+                    "version": "",
+                    "extrainfo": "",
+                    "conf": "3",
+                    "cpe": ""
+                },
+                "808": {
+                    "state": "open",
+                    "reason": "syn-ack",
+                    "name": "mc-nmf",
+                    "product": ".NET Message Framing",
+                    "version": "",
+                    "extrainfo": "",
+                    "conf": "10",
+                    "cpe": "cpe:/o:microsoft:windows"
+                },
+                "903": {
+                    "state": "open",
+                    "reason": "syn-ack",
+                    "name": "vmware-auth",
+                    "product": "VMware Authentication Daemon",
+                    "version": "1.10",
+                    "extrainfo": "Uses VNC, SOAP",
+                    "conf": "10",
+                    "cpe": ""
+                },
+                "913": {
+                    "state": "open",
+                    "reason": "syn-ack",
+                    "name": "vmware-auth",
+                    "product": "VMware Authentication Daemon",
+                    "version": "1.0",
+                    "extrainfo": "Uses VNC, SOAP",
+                    "conf": "10",
+                    "cpe": ""
+                },
+                "1433": {
+                    "state": "open",
+                    "reason": "syn-ack",
+                    "name": "ms-sql-s",
+                    "product": "Microsoft SQL Server 2019",
+                    "version": "15.00.2000",
+                    "extrainfo": "",
+                    "conf": "10",
+                    "cpe": "cpe:/a:microsoft:sql_server:2019"
+                },
+                "1462": {
+                    "state": "open",
+                    "reason": "syn-ack",
+                    "name": "http",
+                    "product": "Microsoft HTTPAPI httpd",
+                    "version": "2.0",
+                    "extrainfo": "SSDP/UPnP",
+                    "conf": "10",
+                    "cpe": "cpe:/o:microsoft:windows"
+                },
+                "5040": {
+                    "state": "open",
+                    "reason": "syn-ack",
+                    "name": "unknown",
+                    "product": "",
+                    "version": "",
+                    "extrainfo": "",
+                    "conf": "3",
+                    "cpe": ""
+                },
+                "5357": {
+                    "state": "open",
+                    "reason": "syn-ack",
+                    "name": "http",
+                    "product": "Microsoft HTTPAPI httpd",
+                    "version": "2.0",
+                    "extrainfo": "SSDP/UPnP",
+                    "conf": "10",
+                    "cpe": "cpe:/o:microsoft:windows"
+                },
+                "5426": {
+                    "state": "open",
+                    "reason": "syn-ack",
+                    "name": "http",
+                    "product": "Microsoft HTTPAPI httpd",
+                    "version": "2.0",
+                    "extrainfo": "SSDP/UPnP",
+                    "conf": "10",
+                    "cpe": "cpe:/o:microsoft:windows"
+                },
+                "5432": {
+                    "state": "open",
+                    "reason": "syn-ack",
+                    "name": "postgresql",
+                    "product": "PostgreSQL DB",
+                    "version": "9.6.0 or later",
+                    "extrainfo": "",
+                    "conf": "10",
+                    "cpe": "cpe:/a:postgresql:postgresql"
+                },
+                "7680": {
+                    "state": "open",
+                    "reason": "syn-ack",
+                    "name": "pando-pub",
+                    "product": "",
+                    "version": "",
+                    "extrainfo": "",
+                    "conf": "3",
+                    "cpe": ""
+                },
+                "17491": {
+                    "state": "open",
+                    "reason": "syn-ack",
+                    "name": "unknown",
+                    "product": "",
+                    "version": "",
+                    "extrainfo": "",
+                    "conf": "3",
+                    "cpe": ""
+                },
+                "27036": {
+                    "state": "open",
+                    "reason": "syn-ack",
+                    "name": "steam",
+                    "product": "Valve Steam In-Home Streaming service",
+                    "version": "",
+                    "extrainfo": "TLSv1.2 PSK",
+                    "conf": "10",
+                    "cpe": ""
+                },
+                "49664": {
+                    "state": "open",
+                    "reason": "syn-ack",
+                    "name": "msrpc",
+                    "product": "Microsoft Windows RPC",
+                    "version": "",
+                    "extrainfo": "",
+                    "conf": "10",
+                    "cpe": "cpe:/o:microsoft:windows"
+                },
+                "49665": {
+                    "state": "open",
+                    "reason": "syn-ack",
+                    "name": "msrpc",
+                    "product": "Microsoft Windows RPC",
+                    "version": "",
+                    "extrainfo": "",
+                    "conf": "10",
+                    "cpe": "cpe:/o:microsoft:windows"
+                },
+                "49666": {
+                    "state": "open",
+                    "reason": "syn-ack",
+                    "name": "msrpc",
+                    "product": "Microsoft Windows RPC",
+                    "version": "",
+                    "extrainfo": "",
+                    "conf": "10",
+                    "cpe": "cpe:/o:microsoft:windows"
+                },
+                "49667": {
+                    "state": "open",
+                    "reason": "syn-ack",
+                    "name": "msrpc",
+                    "product": "Microsoft Windows RPC",
+                    "version": "",
+                    "extrainfo": "",
+                    "conf": "10",
+                    "cpe": "cpe:/o:microsoft:windows"
+                },
+                "49668": {
+                    "state": "open",
+                    "reason": "syn-ack",
+                    "name": "msrpc",
+                    "product": "Microsoft Windows RPC",
+                    "version": "",
+                    "extrainfo": "",
+                    "conf": "10",
+                    "cpe": "cpe:/o:microsoft:windows"
+                },
+                "49669": {
+                    "state": "open",
+                    "reason": "syn-ack",
+                    "name": "msrpc",
+                    "product": "Microsoft Windows RPC",
+                    "version": "",
+                    "extrainfo": "",
+                    "conf": "10",
+                    "cpe": "cpe:/o:microsoft:windows"
+                },
+                "49671": {
+                    "state": "open",
+                    "reason": "syn-ack",
+                    "name": "msrpc",
+                    "product": "Microsoft Windows RPC",
+                    "version": "",
+                    "extrainfo": "",
+                    "conf": "10",
+                    "cpe": "cpe:/o:microsoft:windows"
+                },
+                "57621": {
+                    "state": "open",
+                    "reason": "syn-ack",
+                    "name": "",
+                    "product": "",
+                    "version": "",
+                    "extrainfo": "",
+                    "conf": "",
+                    "cpe": ""
+                }
+            }
+        }
+    }
+}
